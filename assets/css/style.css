@@ -12,9 +12,10 @@
     --font-base:"Bai Jamjuree";
 }
 body{
-    background-color: var(--color-base2);
+    background-color: black;
     color: var(--color-body);
     font-family: var(--font-base),sans-serif;
+    background-image:linear-gradient(rgba(3,53,67),rgba(3,53,67)),url(../images/sidebar.jpg);
 }
 h1,h2,h3,h4,h5,h6{
     color: var(--color-heading);
@@ -81,7 +82,7 @@ color: var(--color-brand);
     .navbar{
         min-height: 100vh;
         width: var(--sidbar-width);
-        background: linear-gradient(rgba(3, 63, 71, 0.8),rgba(3, 63, 71, 0.8)), url(../images/sidebar.jpg);
+        background: linear-gradient(rgba(3, 71, 8, 0.8),rgba(3, 71, 13, 0.8)), url(../images/sidebar.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -126,4 +127,13 @@ color: var(--color-brand);
 }
 .link-custom:hover:after{
     width: 100%;
+}
+.card-custom .card-custom-image{
+  overflow: hidden;
+}
+.card-custom .card-custom-image img{
+    transition: all 0.4s ease;
+}
+.card-custom:hover .card-custom-image img{
+    transition: scale(1.1);
 }
